@@ -22,6 +22,11 @@ class ArticlesController < ApplicationController
 	   flash.notice = "Article '#{@article.title}' Saved"
 	   redirect_to article_path(@article)
 	end
+	
+	def tag_list=(tags_string)
+
+	end
+
 
 	def destroy
 		@article = Article.find(params[:id])
